@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+/* Container principal */
+.print-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Inter', sans-serif; /* Filament uses this font */
+}
+
+/* Conteúdo da impressão */
+.print-content {
+    flex: 1;
+    margin-right: 20px;
+    width: 50%;
+    background-color: red;
+}
+
+/* Imagens de impressão */
+.print-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+/* Imagens de rótulos e embalagem */
+.label-group-image-container,
+.package-image-container {
+    margin-bottom: 20px;
+}
+
+.label-group-image,
+.package-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* Informações do produto */
+.product-info div,
+.batch-info div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Seleção de lote */
+.select-lote {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+/* Botão de impressão */
+.print-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+/* Botão desativado */
+.print-button.bg-gray-400 {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+ 

@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/postcss": "^4.1.12",
+        "@tailwindcss/typography": "^0.5.15",
+        "@tailwindcss/vite": "^4.1.12",
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "postcss": "^8.4.45",
+        "postcss-nesting": "^13.0.0",
+        "print-js": "^1.6.0",
+        "tailwindcss": "^4.1.12",
+        "vite": "^6.0.0"
+    },
+    "dependencies": {
+        "puppeteer": "^23.2.1"
+    }
+}

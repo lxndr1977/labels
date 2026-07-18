@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Package extends Model
+{
+    use HasFactory;
+
+
+    protected $fillable = [
+        'image',
+        'description',
+    ];
+
+    public function products() {
+        return $this->hasMany(Product::class);
+    }
+
+    public function getImageUrlAttribute()
+{
+    return $this->image; // Ou como você está armazenando a URL da imagem
+}
+}

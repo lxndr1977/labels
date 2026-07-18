@@ -1,0 +1,24 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BbrKX8Tu.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/filament/login/theme.css": {
+    "file": "assets/theme-Cj0A9xfk.css",
+    "src": "resources/css/filament/login/theme.css",
+    "isEntry": true
+  },
+  "resources/css/filament/login/theme.js": {
+    "file": "assets/theme-l0sNRNKZ.js",
+    "name": "theme",
+    "src": "resources/css/filament/login/theme.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C0G0cght.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
